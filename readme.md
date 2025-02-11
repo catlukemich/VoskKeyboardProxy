@@ -43,7 +43,7 @@ Run the application, choose the language you want and press the start button.
 In order to start dictating press control key (left or right) and speak to the microphone.
 After you have finished dictating release the control key on the keyboard - the dictated text will get sent to the operating system, acting the same way as if real keyboard keys were pressed.
 
-:warning: If the text doesn't appear try releasing the control key later.
+:warning: If the text doesn't appear try releasing the control key a little bit later.
 
 ## Smaller features
 
