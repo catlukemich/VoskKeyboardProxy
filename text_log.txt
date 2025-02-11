@@ -161,13 +161,13 @@ Date of recordings: 2024/12/30 | day of year: 365 PONIEDZIAŁEK
 
 Date of recordings: 2025/01/02 | day of year: 002 CZWARTEK
 12:43:38: podaj jakiś przykład z życia wzięty 
-12:44:02: kurwa robiła 
+12:44:02: ------ robiła 
 12:45:38: pete 
 12:49:00: a w jaki sposób zdefiniować punkty 
 12:49:06: przywracania historii 
-12:50:49: kurwa mać 
+12:50:49: ------ mać 
 12:50:58: jednak chuście odbudowa 
-12:51:01: i kurwa 
+12:51:01: i ------ 
 12:51:20: trzy 
 12:57:26: jak było 
 12:59:22: pierwsze 
@@ -176,13 +176,13 @@ Date of recordings: 2025/01/02 | day of year: 002 CZWARTEK
 13:32:10: skrót 
 13:33:20: rozdział 
 13:57:43: kiedy 
-13:59:14: kurwa 
+13:59:14: ------ 
 14:06:12: jeszcze inne 
 14:06:15: parametry 
 14:06:18: można wysyłać do 
 14:06:20: funkcji 
 14:07:02: a czy da się zrobić separator 
-14:11:39: kurwa jest 
+14:11:39: ------ jest 
 14:12:44: z ma 
 14:12:47: dla 
 14:14:02: mam problem z uruchomieniem pluginów 
@@ -230,7 +230,7 @@ Date of recordings: 2025/01/02 | day of year: 002 CZWARTEK
 21:25:41: zestawu 
 21:25:52: na niesienie poprawek 
 21:26:03: finalizacja 
-21:26:15: kurwa durniów 
+21:26:15: ------ durniów 
 21:26:23: proponuję następne 
 21:26:27: proponujemy następujący schemat działania 
 21:28:02: oczywiście z budżetem sto złotych 
@@ -246,7 +246,7 @@ Date of recordings: 2025/01/02 | day of year: 002 CZWARTEK
 21:29:45: powinniśmy 
 21:29:47: wyrobi się 
 21:29:54: w dwa dni 
-21:31:05: portfela na nic siły lub kurwa 
+21:31:05: portfela na nic siły lub ------ 
 21:31:11: tom 
 21:31:46: co się 
 21:33:44: z góry należy za 
@@ -302,7 +302,7 @@ Date of recordings: 2025/01/02 | day of year: 002 CZWARTEK
 21:45:00: zakładając że 
 21:45:03: dziennie to będzie 
 21:45:05: trzy godziny 
-21:45:25: kurwa mać 
+21:45:25: ------ mać 
 21:45:40: przybliżony 
 21:46:23: jednak może się nim nie sugerować 
 21:46:28: proszę 
@@ -345,7 +345,7 @@ Date of recordings: 2025/01/02 | day of year: 002 CZWARTEK
 21:58:42: cena do negocjacji 
 21:58:45: widełki 
 22:02:46: pytasz 
-22:18:28: kurwa 
+22:18:28: ------ 
 22:18:59: toku 
 23:03:34: repository 
 23:03:36: of 
@@ -620,17 +620,17 @@ Date of recordings: 2025/01/04 | day of year: 004 SOBOTA
 19:11:04: aha 
 19:12:05: panowie 
 19:12:28: tylko 
-19:14:02: dwie kurwa nie ma znaczenia jest warta za nadobne kurwa 
+19:14:02: dwie ------ nie ma znaczenia jest warta za nadobne ------ 
 19:14:09: już pod koniec tego jednego do miasta dalej 
 19:15:00: jak 
 19:15:05: tak 
 19:15:13: jak zbudować twardość obie 
 19:15:14: złe 
-19:16:04: gdzie kurwa mać 
+19:16:04: gdzie ------ mać 
 19:25:43: co 
 19:31:39: jak pomniejszyć działkę 
 19:31:43: czcionkę 
-19:33:10: wersja kurwa 
+19:33:10: wersja ------ 
 20:04:00: środę 
 20:04:20: dziękuję 
 20:06:39: wiesz 
@@ -658,7 +658,7 @@ Date of recordings: 2025/01/04 | day of year: 004 SOBOTA
 20:11:49: ewelina 
 20:11:59: tak 
 20:12:19: ale 
-20:23:34: pierdolić kurwa 
+20:23:34: pierdolić ------ 
 20:26:24: garnitur męski 
 20:26:27: granatowy 
 20:26:35: rozmiar 
@@ -695,7 +695,7 @@ Date of recordings: 2025/01/04 | day of year: 004 SOBOTA
 21:03:32: długość nogawki 
 21:03:47: preferowany odbiór osobisty 
 21:05:07: rozmiar 
-21:07:01: co jest kurwa działa 
+21:07:01: co jest ------ działa 
 
 Date of recordings: 2025/01/05 | day of year: 005 NIEDZIELA
 09:01:26: znaleźć w internecie 
@@ -715,7 +715,7 @@ Date of recordings: 2025/01/05 | day of year: 005 NIEDZIELA
 09:08:09: narciarskie 
 09:14:47: buty 
 09:14:49: do kurwy nędzy no 
-09:15:39: zobacz spierdalaj kurwa 
+09:15:39: zobacz spierdalaj ------ 
 09:16:04: zdrowie 
 09:16:09: wbrew 
 09:16:49: biblii 
@@ -894,7 +894,7 @@ Date of recordings: 2025/01/05 | day of year: 005 NIEDZIELA
 17:27:50: znowu 
 17:33:33: kameleony 
 17:34:55: dane 
-17:35:00: kurwa 
+17:35:00: ------ 
 17:36:14: wystawa obrazów 
 17:39:13: asked for every file 
 17:39:19: override 
@@ -2102,7 +2102,7 @@ Date of recordings: 2025/01/10 | day of year: 010 PIĄTEK
 14:39:31: przymiarki do 
 14:40:04: studium wykonalności 
 14:40:45: wśród 
-15:41:59: gdzie kurwa 
+15:41:59: gdzie ------ 
 19:49:59: nie polecam 
 19:50:08: nie dość że nie odpowiadali na władza wie 
 19:50:23: wreszcie od złych 
@@ -2245,7 +2245,7 @@ Date of recordings: 2025/01/13 | day of year: 013 PONIEDZIAŁEK
 14:21:48: dobrze 
 14:22:20: gdy 
 14:24:02: dziękuję 
-14:24:03: kurwa 
+14:24:03: ------ 
 14:33:18: zarzuty 
 14:45:34: wejście próba pierwsza 
 14:46:06: jeden 
@@ -2254,22 +2254,22 @@ Date of recordings: 2025/01/13 | day of year: 013 PONIEDZIAŁEK
 14:55:00: postęp prac 
 15:22:51: jak co roku mogli zaś 
 15:29:46: dywany do kurwy nędzy 
-15:31:26: kurwa 
+15:31:26: ------ 
 15:31:28: barney 
 15:32:37: mocno 
 15:32:39: seks mama próbowała 
 15:32:46: pierdolę to zaraz go złamać 
-15:33:34: ale to jest chyba nie bali się do chuja 
+15:33:34: ale to jest chyba nie bali się do ------a 
 15:39:32: brakuje 
 15:43:03: elementy scenariusz głównej 
 15:53:26: zgodzi obie z kolei spłynęła 
 15:53:40: jest dobór byłeś zrobiłeś 
 15:53:46: obozy budowania 
 15:53:54: ty chyba dzbanie 
-15:53:57: ty kurwa pierdolę dzbanie 
-15:54:27: kształtowanie tego odwodzić ziemi zgrać kurwa nie 
-15:54:29: kurasia zły kurwa 
-16:20:24: dwa wymaga jest kurwa to 
+15:53:57: ty ------ pierdolę dzbanie 
+15:54:27: kształtowanie tego odwodzić ziemi zgrać ------ nie 
+15:54:29: kurasia zły ------ 
+16:20:24: dwa wymaga jest ------ to 
 16:20:54: jeśli 
 16:21:24: dr 
 16:21:29: tak 
@@ -2417,7 +2417,7 @@ Date of recordings: 2025/01/14 | day of year: 014 WTOREK
 16:17:46: damage 
 16:24:24: this could have a spell 
 16:50:53: also 
-16:51:34: oh shit 
+16:51:34: oh ------ 
 16:53:53: no 
 16:53:56: maria 
 16:54:00: he does the vocal have a much 
@@ -2432,7 +2432,7 @@ Date of recordings: 2025/01/14 | day of year: 014 WTOREK
 19:41:52: bądź 
 19:42:12: za 
 19:42:22: ciebie 
-19:44:38: gdy śpię kurwa 
+19:44:38: gdy śpię ------ 
 19:51:58: daj się jej jezu 
 19:52:00: więzienia 
 19:52:05: i 
@@ -2441,7 +2441,7 @@ Date of recordings: 2025/01/15 | day of year: 015 ŚRODA
 13:37:29: z animacji 
 13:37:32: kupno 
 13:37:38: zegar 
-13:40:29: ponieważ kurwa 
+13:40:29: ponieważ ------ 
 13:41:05: dwa 
 13:41:30: firma 
 20:54:09: extract 
@@ -2548,7 +2548,7 @@ Date of recordings: 2025/01/16 | day of year: 016 CZWARTEK
 17:46:58: przycięte elementy 
 17:47:01: i je odtworzyć 
 17:47:07: uwzględnić 
-17:50:44: pierdolić kurwa 
+17:50:44: pierdolić ------ 
 17:50:52: dziękuję 
 17:57:44: heh 
 19:01:01: dzień dobry 
@@ -2671,15 +2671,15 @@ Date of recordings: 2025/01/17 | day of year: 017 PIĄTEK
 13:09:53: nie mam czasu oglądać samouczków 
 13:10:00: a nic dać milion stąd dokumentacji 
 13:10:08: ani czy dać miliona stron dokumentacji 
-13:10:12: czytać kurwa 
+13:10:12: czytać ------ 
 13:10:47: który jest jak na lekarstwo 
 13:11:08: jak ty go 
 13:11:16: odłożę 
 13:11:19: trochę grosza 
 13:11:22: dwa 
 13:11:26: to wypierdalać 
-13:14:46: kurwa mać 
-13:26:58: budzić kurwa pierdoły chyba nas 
+13:14:46: ------ mać 
+13:26:58: budzić ------ pierdoły chyba nas 
 13:27:12: adrian jezu i żądał wydziału ślubu i wesela jest więc nie mogę z winami wola mój o głosu lidze widział zabił lat i misja i wizja 
 13:27:15: w biurze 
 13:27:19: jeśli zawodzie 
@@ -2690,11 +2690,11 @@ Date of recordings: 2025/01/17 | day of year: 017 PIĄTEK
 13:27:32: wielu podała 
 13:27:37: trzy 
 13:27:49: czym się tu pierdolę 
-13:27:53: spierdalaj że kurwa co co wie co za ludzie 
+13:27:53: spierdalaj że ------ co co wie co za ludzie 
 13:27:56: zus maria 
 13:28:04: jest 
 13:28:06: szczęśliwy dwa 
-13:32:13: ad age właśnie osób czas ciągle jest kurwa co u siebie 
+13:32:13: ad age właśnie osób czas ciągle jest ------ co u siebie 
 13:32:15: maria 
 13:33:18: dziewięć razy 
 13:35:16: worries 
@@ -3123,7 +3123,7 @@ Date of recordings: 2025/01/18 | day of year: 018 SOBOTA
 18:57:21: jak dodał 
 18:57:24: za drogowej 
 18:57:27: prowincja do bezbronnych 
-18:57:35: pomimo jednolitej lipowej liturgii dla jest dla wygody jest kurwa jest 
+18:57:35: pomimo jednolitej lipowej liturgii dla jest dla wygody jest ------ jest 
 18:57:40: do wariantu 
 18:57:44: tego się obejść 
 18:57:46: skrobać 
@@ -3674,7 +3674,7 @@ Date of recordings: 2025/01/18 | day of year: 018 SOBOTA
 21:30:32: lesie 
 21:30:41: z 
 21:32:03: fuj 
-21:32:08: chuj 
+21:32:08: ------ 
 21:32:11: mój 
 21:32:14: nie 
 21:32:21: lama 
@@ -3697,7 +3697,7 @@ Date of recordings: 2025/01/18 | day of year: 018 SOBOTA
 21:34:48: zegar 
 21:35:05: obraz do obrazu 
 21:35:30: negatywne 
-21:36:47: po co to kurwa jest 
+21:36:47: po co to ------ jest 
 21:37:03: chcę poznać piątku 
 21:37:14: cztery 
 21:37:19: obraz wynikowy 
@@ -3763,7 +3763,7 @@ Date of recordings: 2025/01/19 | day of year: 019 NIEDZIELA
 11:49:52: inne 
 11:50:17: wygenerowany przez sztuczną inteligencję 
 11:50:22: dwie 
-11:50:31: kurwa 
+11:50:31: ------ 
 11:51:45: dotyczące samego filmu 
 11:52:10: oba 
 11:52:34: kwas 
@@ -3816,7 +3816,7 @@ Date of recordings: 2025/01/19 | day of year: 019 NIEDZIELA
 12:08:58: niesamowite historie 
 12:09:03: gdy zobaczyli 
 12:09:38: naruto 
-18:07:02: black lives będą kurwa jak idiota spór 
+18:07:02: black lives będą ------ jak idiota spór 
 18:07:22: nie wiem 
 18:07:37: dobry 
 18:07:41: dzięki 
@@ -3853,7 +3853,7 @@ Date of recordings: 2025/01/19 | day of year: 019 NIEDZIELA
 18:21:04: ponosić 
 18:21:06: dzwonię 
 18:21:11: dobrze 
-18:21:21: kurwa mać 
+18:21:21: ------ mać 
 18:21:25: tak lub dodawać 
 18:21:30: dziewięć 
 18:21:40: dziś 
@@ -3863,23 +3863,23 @@ Date of recordings: 2025/01/19 | day of year: 019 NIEDZIELA
 18:22:15: egzamin 
 18:22:17: jak to zrobić 
 18:22:34: dobry 
-18:28:23: się kurwa 
+18:28:23: się ------ 
 18:28:49: doposażenie nie dojdzie 
 18:29:04: nie 
 18:29:07: zgoda 
 18:29:23: lista 
 18:29:53: dzięki 
 18:31:58: dziś 
-18:32:12: gdyby zaś kurwa mać 
-18:32:16: jakoś sobie dajesz komuś za dziewięć go dostęp do kurwa 
+18:32:12: gdyby zaś ------ mać 
+18:32:16: jakoś sobie dajesz komuś za dziewięć go dostęp do ------ 
 18:32:21: jest chyba dziewięć 
 18:32:43: jedno z was pyta 
-18:41:09: co ty kurwa tu a to jest jej kurwa debil 
+18:41:09: co ty ------ tu a to jest jej ------ debil 
 18:50:27: co to 
 18:50:29: dodaje 
 18:52:04: stan warsztaty 
 18:59:42: tylko spać 
-18:59:46: ty kurwa pierdolę z bali 
+18:59:46: ty ------ pierdolę z bali 
 19:00:50: ja tylko dwa się boję się ciebie 
 19:02:46: stój 
 19:18:10: twoje próby jeśli bulwary weź spierdalaj 
@@ -3887,7 +3887,7 @@ Date of recordings: 2025/01/19 | day of year: 019 NIEDZIELA
 19:18:19: zaznaczył 
 19:18:24: dzisiaj 
 19:18:26: drzwi 
-19:18:48: jest kurwa dość 
+19:18:48: jest ------ dość 
 19:19:56: przy rybach zbudowanie bazy 
 19:20:16: czy 
 19:28:02: z piwem i nabyć do brygady 
@@ -3912,7 +3912,7 @@ Date of recordings: 2025/01/19 | day of year: 019 NIEDZIELA
 21:13:20: bez lub genderowe będę zbyt gruba będę gówno 
 21:13:21: modele ze 
 21:13:24: w bazie 
-21:21:46: co kurwa 
+21:21:46: co ------ 
 
 Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 10:31:00: w sprawie tego badania okulistycznego 
@@ -3961,14 +3961,14 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 10:45:34: trzeba będzie zrobić dbanie 
 10:53:38: gaz 
 12:46:41: nowe 
-13:02:06: pierdolić kurwa mać 
+13:02:06: pierdolić ------ mać 
 13:02:09: jestem gdzieś różowo 
-13:02:12: zgodnie z kurwa dobry powód 
+13:02:12: zgodnie z ------ dobry powód 
 13:02:14: co bądź 
 13:02:21: co do góry 
 13:15:20: miejsce bardzo przykro oddzielać 
 13:16:06: ciebie 
-13:26:32: kurwa pokazać swoje lub kurwa mać 
+13:26:32: ------ pokazać swoje lub ------ mać 
 13:26:40: to 
 13:26:42: tu 
 13:27:03: pięć 
@@ -3990,8 +3990,8 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 13:34:12: dobrze tu było bzdury 
 13:34:14: pogrzeb źle 
 13:34:16: gdy mobilnej 
-13:34:18: kurwa 
-13:34:28: greckie kurwa robisz lub te pudła a cztery tysiąc pięćset do chuja 
+13:34:18: ------ 
+13:34:28: greckie ------ robisz lub te pudła a cztery tysiąc pięćset do ------a 
 13:34:30: czy nie 
 13:34:33: jesteśmy z jedną osobę 
 13:34:34: jest ciebie 
@@ -4003,7 +4003,7 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 13:34:55: kurde się być sygnał 
 13:35:01: przepis 
 13:35:03: lewis 
-13:35:05: przybyli miliard razy kurwa 
+13:35:05: przybyli miliard razy ------ 
 13:35:10: trzy 
 13:35:11: dziękuję 
 13:35:20: jeden trzy 
@@ -4015,10 +4015,10 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 13:35:45: zgoda studia 
 13:35:49: choć była tutaj stało 
 13:35:53: jezus maria 
-13:36:00: łapcie jeden je tutaj kurwa mać mi to oraz go ogół ja 
+13:36:00: łapcie jeden je tutaj ------ mać mi to oraz go ogół ja 
 13:36:03: dobra domowe spa lub 
 13:36:07: wyjazdy narciarskie lidze 
-13:36:45: smog jest kurwa robię ja nie mam czasu się tu pierdolić 
+13:36:45: smog jest ------ robię ja nie mam czasu się tu pierdolić 
 13:36:47: blaski 
 13:36:52: ozdoby 
 13:36:56: tu się w obsadzie 
@@ -4067,18 +4067,18 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 18:29:45: czym się grubego 
 18:29:46: tego nie chce 
 18:29:48: chcę 
-18:29:50: rosyjskie chuj 
+18:29:50: rosyjskie ------ 
 18:29:54: ani tu ani tu 
 18:29:55: warto 
 18:30:20: czy 
-18:30:55: kurwa 
+18:30:55: ------ 
 18:31:23: aż trzy 
 18:31:30: śmieszna 
 18:31:34: więc roześmiać na temat wybierz podaj numer 
 18:31:36: oddział 
-18:31:43: ad jeden kurwa i bankowe radni boga z gospodarstwa w oddali powodów 
+18:31:43: ad jeden ------ i bankowe radni boga z gospodarstwa w oddali powodów 
 18:31:49: jej paliwa to 
-18:31:55: okażmy to będzie ono kurwa jest prąd kurwa mać 
+18:31:55: okażmy to będzie ono ------ jest prąd ------ mać 
 18:31:58: autobus skoro podanej 
 18:32:00: zwiedzamy powyżej 
 18:32:25: gdzie ciebie 
@@ -4090,16 +4090,16 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 18:32:42: wiele osób lub coś więcej 
 18:32:44: dom 
 18:32:52: pięć 
-18:33:14: dobry dochodzi kurwa dzwonię do szkoły 
+18:33:14: dobry dochodzi ------ dzwonię do szkoły 
 18:33:15: pani doktor 
 18:33:23: jesteś była miłość do ludzi 
-18:33:35: jest jej robię się on kurwa tego ich sobie jezioro 
-18:33:38: dbanie o kurwa mać 
+18:33:35: jest jej robię się on ------ tego ich sobie jezioro 
+18:33:38: dbanie o ------ mać 
 18:34:08: jebać go 
 18:34:26: on tu do idzie sobie dalej 
 18:34:29: weź spierdalaj cukier 
 18:34:32: jesteśmy 
-18:34:36: odgrywa dać ci nie pasuje kurwa czemu do czasu 
+18:34:36: odgrywa dać ci nie pasuje ------ czemu do czasu 
 18:34:38: powodzie 
 18:34:47: z wielką rolę 
 18:34:50: już modliła od moskwy 
@@ -4109,8 +4109,8 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 18:35:54: nie lubię 
 18:35:58: buty 
 18:36:01: tutaj dwa 
-18:36:04: co do chuja 
-18:36:07: jest dać kurwa 
+18:36:04: co do ------a 
+18:36:07: jest dać ------ 
 18:36:13: próbować próbować się próbować 
 18:36:35: w końcu no 
 18:36:37: ale ja 
@@ -4125,7 +4125,7 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 19:41:42: później gdzieś indziej 
 19:41:44: widzę jej 
 19:41:47: idzie 
-19:41:58: kiedy się kurwa ma 
+19:41:58: kiedy się ------ ma 
 19:42:01: zgodnie z syna 
 19:42:05: widać że 
 19:42:07: wybrać 
@@ -4160,7 +4160,7 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 19:44:27: kiedy wyboru 
 19:44:29: idziemy 
 19:44:32: gdzie tu 
-19:44:34: że kurwa 
+19:44:34: że ------ 
 19:44:36: nieraz pierdolić 
 19:44:40: kiedy 
 19:44:44: tej opinii 
@@ -4174,7 +4174,7 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 19:45:46: i były liście 
 19:45:50: jej gdyby leków 
 19:45:53: ubiegali wyjść 
-19:45:57: co do global kurwa 
+19:45:57: co do global ------ 
 19:46:02: stałem tam do na górę 
 19:46:06: istnieje jedynie powiedzieć 
 19:46:11: sam 
@@ -4214,7 +4214,7 @@ Date of recordings: 2025/01/20 | day of year: 020 PONIEDZIAŁEK
 19:54:09: obudziłaś 
 19:54:12: młodzi bywa chodzi 
 19:54:15: dysk lub wypowiedzi 
-19:54:19: do góry był kurwa i bary góry 
+19:54:19: do góry był ------ i bary góry 
 19:54:50: to 
 19:54:52: bartek z tekstu 
 19:55:04: prawdopodobnie 
@@ -4242,7 +4242,7 @@ Date of recordings: 2025/01/21 | day of year: 021 WTOREK
 13:05:17: ha 
 13:22:51: buty 
 19:35:53: opór 
-19:36:17: kurwa pytanie 
+19:36:17: ------ pytanie 
 19:36:36: gdy 
 19:36:46: billy 
 19:54:48: dzień dobry 
@@ -4392,7 +4392,7 @@ Date of recordings: 2025/01/22 | day of year: 022 ŚRODA
 19:35:27: w sumie chyba nie muszę dodawać więcej 
 19:37:07: co 
 19:37:13: i tak powstał to kapitał 
-19:37:46: kurwa 
+19:37:46: ------ 
 19:37:47: wielu 
 19:37:48: są 
 19:37:52: marta 
@@ -4486,10 +4486,10 @@ Date of recordings: 2025/01/22 | day of year: 022 ŚRODA
 
 Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 09:58:32: lecz 
-10:38:07: się o to zapomniałeś nie do kurwa 
+10:38:07: się o to zapomniałeś nie do ------ 
 10:38:09: zus maria 
-10:38:14: dzieci wiedzieć kurwa mać tych durnych głównie 
-10:38:27: umożliwi zapamiętać zabicie bardzo lubię kurwa dam 
+10:38:14: dzieci wiedzieć ------ mać tych durnych głównie 
+10:38:27: umożliwi zapamiętać zabicie bardzo lubię ------ dam 
 10:38:29: trzeba wiesz 
 10:38:35: wspiera 
 10:38:36: spierdalaj 
@@ -4523,9 +4523,9 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 10:51:55: gwiazda dobra 
 10:53:33: otóż samej porze 
 10:53:38: zwykle sobie 
-10:53:49: stop chuja kurwa do czech go dobrze byłoby 
+10:53:49: stop ------a ------ do czech go dobrze byłoby 
 10:53:52: jezus maria ludzie 
-10:53:57: w mordę ma być kurwa i mordę 
+10:53:57: w mordę ma być ------ i mordę 
 10:53:58: morda 
 10:54:03: rozwój 
 10:57:05: pięć 
@@ -4540,22 +4540,22 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 11:19:56: pięć lat 
 11:21:23: dziesięć 
 11:22:49: czas 
-11:24:45: to wszystko co kurwa 
+11:24:45: to wszystko co ------ 
 11:33:03: co pedale 
 11:33:16: ja 
-11:35:01: ty kurwa jest 
-11:35:07: kurwa 
+11:35:01: ty ------ jest 
+11:35:07: ------ 
 11:40:02: babcia panie jezu bilderberg 
 11:40:05: co ja 
 11:40:07: dzieci 
 11:40:10: jak stworzyć 
-11:40:12: kurwa tutaj 
+11:40:12: ------ tutaj 
 11:40:23: zbuduj 
 11:40:27: dział it dubois 
 11:40:30: poradzisz sobie 
 11:40:34: gdzie ich tytuł zakłóceń liczby dzieci 
 11:40:42: czyli 
-11:40:47: dziesięć kurwa 
+11:40:47: dziesięć ------ 
 11:40:49: dzień dobry państwu 
 11:40:59: jasne 
 11:41:13: leszek miller 
@@ -4569,7 +4569,7 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 11:44:35: mija 
 11:44:45: czek 
 11:47:23: miała działa 
-11:47:25: kurwa krycie dzbanie 
+11:47:25: ------ krycie dzbanie 
 11:47:36: koszule tu wątek dał 
 11:47:41: odbierz 
 11:47:49: zbiry sobie z milicji lizbońskiej z więcej 
@@ -4615,7 +4615,7 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 13:05:06: to 
 13:05:09: co przypuszczałem 
 13:05:12: biblia 
-13:06:25: spytaj ja nie mam zamiaru czekać artykuł sobie myślisz o kurwa zł podzielimy szkoła 
+13:06:25: spytaj ja nie mam zamiaru czekać artykuł sobie myślisz o ------ zł podzielimy szkoła 
 13:07:56: brak 
 13:07:57: będę 
 13:08:02: blender 
@@ -4623,21 +4623,21 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 13:14:24: kiedy 
 13:14:28: spór 
 13:15:00: to pozostałe 
-13:15:16: wszystkie chętne za grunt pierdolę kurwa po cudze stąd chciał 
-13:15:36: co jest do chuja 
+13:15:16: wszystkie chętne za grunt pierdolę ------ po cudze stąd chciał 
+13:15:36: co jest do ------a 
 13:15:40: jeden 
 13:15:41: pięć grudnia 
 13:15:44: figura wyjazdu 
 13:16:11: sześć 
 13:16:16: dziewięć 
-13:19:44: bartek złe skrywa mu smith kurwa 
+13:19:44: bartek złe skrywa mu smith ------ 
 13:20:26: się dzieje 
 13:20:30: się to podobać 
 13:20:40: co 
 13:20:56: tutaj zadziwia próbować 
 13:21:00: claire nie będzie 
 13:21:26: wracaj do polski 
-13:21:30: kurwa mać 
+13:21:30: ------ mać 
 13:21:56: sprzedawać swoje 
 13:22:23: zdradziłem 
 13:22:53: ucz się 
@@ -4652,25 +4652,25 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 13:43:49: kierownik próby 
 13:44:10: pięć pójdę rozmyte bardzo gruba co lubi robić 
 13:44:24: pięć po ciebie do przemytem łeb grudniu pierdolić 
-13:44:27: kurwa dzieje gdy już kurwa boli 
+13:44:27: ------ dzieje gdy już ------ boli 
 13:44:33: urząd przebieg gruba 
 13:44:35: dobrze dobrze 
 13:44:36: gdy 
 13:44:41: idź 
 13:44:47: siedzieć dziecko 
 13:46:53: artykuł 
-13:52:28: tu kurwa ja pierdolę 
-13:52:32: będzie to kurwa jest 
+13:52:28: tu ------ ja pierdolę 
+13:52:32: będzie to ------ jest 
 13:53:21: tej 
 13:53:23: to tutaj nie ma tu 
 13:53:38: nie 
 13:54:14: początku 
 13:54:28: zwykły oczywiście i 
 13:54:33: oto duch doktor 
-13:54:39: fabian jak sto razy kurwa 
-13:54:49: ta w której gronie niewiedzy gdybyś lecz to kurwa jest zaś 
+13:54:39: fabian jak sto razy ------ 
+13:54:49: ta w której gronie niewiedzy gdybyś lecz to ------ jest zaś 
 13:54:50: to 
-13:55:59: co ty pierdolić cud pierdolić kurwa mać no 
+13:55:59: co ty pierdolić cud pierdolić ------ mać no 
 13:56:02: sporządzenie 
 13:56:59: pod maską 
 13:57:20: lustra 
@@ -4678,19 +4678,19 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 14:00:29: wydalenie być 
 14:00:31: jak podkreśliła 
 14:00:32: robić 
-14:00:36: kurwa i 
-14:00:43: skrót do gołej kurwa pierdoły cię sens 
-14:00:47: dupę wsadzić je kurwa po drodze kurwa 
+14:00:36: ------ i 
+14:00:43: skrót do gołej ------ pierdoły cię sens 
+14:00:47: dupę wsadzić je ------ po drodze ------ 
 14:00:52: dziękuję 
-14:01:01: kurwa 
-14:01:09: ty kurwa 
+14:01:01: ------ 
+14:01:09: ty ------ 
 14:01:14: co 
 14:01:34: cię 
 14:02:04: pięć 
 14:02:07: to z jej generał 
 14:02:09: to z kim zero 
 14:03:09: nasi producenci drobiu właściwie 
-14:03:19: do pomocy w górach gdzie to jest bóg gdzie była ty kurwa gdzie moje kurwa wysoki 
+14:03:19: do pomocy w górach gdzie to jest bóg gdzie była ty ------ gdzie moje ------ wysoki 
 14:03:28: dodano 
 14:03:41: zus 
 14:03:48: nie dalej jak w piecu gdyż być 
@@ -4701,9 +4701,9 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 14:07:53: trwały 
 14:08:02: jak 
 14:10:16: panie panie 
-14:10:18: nie do kurwa jest 
-14:11:26: bądź jadą włączyłem to ciągle jest kurwa zaś jego 
-14:12:30: co ty mi kurwa to zaś odgradza nas 
+14:10:18: nie do ------ jest 
+14:11:26: bądź jadą włączyłem to ciągle jest ------ zaś jego 
+14:12:30: co ty mi ------ to zaś odgradza nas 
 14:14:44: ja pierdolę doskonałymi skoro 
 14:15:06: wielu 
 14:15:09: za 
@@ -4717,14 +4717,14 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 14:16:31: czym 
 14:16:36: to gówno 
 14:16:46: ty 
-14:17:29: kurwa dół dół w dół 
-14:17:35: spierdalaj kurwa stylu 
+14:17:29: ------ dół dół w dół 
+14:17:35: spierdalaj ------ stylu 
 14:17:37: paliwami 
-14:17:49: krawat podróbek chuj wiedzę 
+14:17:49: krawat podróbek ------ wiedzę 
 14:17:51: spierdalaj 
 14:19:20: i zero 
 14:19:22: z kolei zero 
-14:19:26: jestem punkt kurwa 
+14:19:26: jestem punkt ------ 
 14:19:46: utwór 
 14:19:51: chyba 
 14:20:45: autor 
@@ -4732,19 +4732,19 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 14:22:21: tak 
 14:23:31: banki 
 14:25:43: pewno 
-14:25:49: modelowym kurwa bezużyteczny głównego 
+14:25:49: modelowym ------ bezużyteczny głównego 
 14:26:44: lampy 
 14:27:05: odpowiedź kiedyś to zrobię 
 14:27:26: lat 
 14:27:31: jeden wymioty 
-14:27:53: panie kurwa 
+14:27:53: panie ------ 
 14:29:20: że spotka 
-14:29:24: kurwa i sztuczna inteligencja 
+14:29:24: ------ i sztuczna inteligencja 
 14:29:26: poszła próbę płyta 
-14:29:50: jest to po co daje jej nie ma jedynie ma kurwa do jest dzieła 
+14:29:50: jest to po co daje jej nie ma jedynie ma ------ do jest dzieła 
 14:29:52: mariano 
-14:29:57: wpływ kurwa jest 
-14:30:08: cię kurwa mać 
+14:29:57: wpływ ------ jest 
+14:30:08: cię ------ mać 
 14:30:18: rodzaj królewskiej robilibyśmy gdyby 
 14:30:33: próbki 
 14:31:02: sens 
@@ -4795,10 +4795,10 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 20:00:01: a nie bój się 
 20:00:08: c życia powiedzieć 
 20:00:11: coraz częściej niż 
-20:00:45: z pit kurwa 
+20:00:45: z pit ------ 
 20:00:46: ja 
 20:00:50: w bik big tor 
-20:01:02: nie chcę kurwa tego 
+20:01:02: nie chcę ------ tego 
 20:01:40: przetrwać to by badać tę drogę 
 20:02:51: czyli 
 20:05:14: dobrze wiedzieć bo oglądam może czegoś się dowiem 
@@ -4806,8 +4806,8 @@ Date of recordings: 2025/01/23 | day of year: 023 CZWARTEK
 20:05:38: czasem się 
 20:06:25: zmęczona samego początku bywa ośle 
 20:08:33: katarzyna dziejów 
-20:08:36: nie ma kurwa dzięki dowodzą 
-20:08:40: kurwa badanie 
+20:08:36: nie ma ------ dzięki dowodzą 
+20:08:40: ------ badanie 
 20:08:45: zawsze roboczą 
 
 Date of recordings: 2025/01/24 | day of year: 024 PIĄTEK
@@ -4821,3 +4821,6 @@ Date of recordings: 2025/02/11 | day of year: 042 WTOREK
 11:32:13: the boys 
 11:32:16: two bodies 
 11:32:18: two boys 
+11:38:51: the project 
+11:38:54: hello 
+11:39:09: działa to czy nie działa ------ 
