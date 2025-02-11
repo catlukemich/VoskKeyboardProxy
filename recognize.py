@@ -19,6 +19,8 @@ from tkinter.ttk import *
 import sounddevice as sd
 import shelve
 from pywinauto.keyboard import send_keys
+import pywinauto.timings as timings
+import keyboard
 from PIL import Image, ImageTk
 
 from vosk import Model, KaldiRecognizer
@@ -58,6 +60,8 @@ def remap_command(previous_string, dictated_string):
 class App:
 
     def __init__(self) -> None:
+        timings.Timings.after_sendkeys_key_wait = 0
+        
         self.main_thread_queue = queue.Queue()
         
         try:
@@ -71,7 +75,7 @@ class App:
                 
         self.language = "pl" if not "language" in self.shelve else self.shelve["language"]
         self.autostart = False if not "autostart" in self.shelve else self.shelve["autostart"]
-        self.do_logging = False if not "do_logging" in self.shelve else self.shelve["do_logging"]
+        self.do_logging = True if not "do_logging" in self.shelve else self.shelve["do_logging"]
         
         if "language" in self.shelve:
             self.language = self.shelve["language"]
@@ -125,7 +129,7 @@ class App:
                 self.stop_taskbar_icon_anim()
                 self.running = False
             self.recognizer_running = not self.recognizer_running
-                
+            
         self.start_button = tk.Button(self.root_window, text="START", command=toggle_recognizer)
         self.start_button["text"] = "START"
         self.start_button["fg"] = "white"
@@ -222,7 +226,7 @@ class App:
         
         language = langs_map[self.language]
         
-        self.root_window.title(f"VOSK: {language.capitalize()} - keyboard proxy")
+        self.root_window.title(f"{language.capitalize()} -  VOSK keyboard proxy")
  
     def restart_recognizer(self):
         if self.running:
@@ -299,7 +303,7 @@ class App:
                     dtype="int16", channels=1, callback=callback, latency="high"):
 
                 rec = KaldiRecognizer(model, samplerate)
-
+                
                 # print(len(sd.query_devices()))
 
 
@@ -345,9 +349,10 @@ class App:
                             if len(stripped) > 0 and stripped[-1] == ".":
                                 processed_text = processed_text.capitalize()
                         if processed_text.strip():
-                            send_keys(processed_text + " ", with_spaces = True, pause = 0)
+                            if keyboard.is_pressed("ctrl"):
+                                ctrls_up = "{VK_CONTROL up}{VK_LCONTROL up}" # kinda works, needs testing (the ctrl to hold for the keys to be sent)
+                                send_keys(ctrls_up + processed_text + " ", with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
                             previous_text = processed_text
-
                         self.latest_entries_box.insert(0, text)
                         
                         def print_to_log_conditionaly():

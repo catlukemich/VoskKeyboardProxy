@@ -1,3 +1,2 @@
-'language', (0, 20)
-'autostart', (512, 4)
-'do_logging', (1024, 5)
+'autostart', (0, 4)
+'language', (512, 17)
