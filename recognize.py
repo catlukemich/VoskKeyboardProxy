@@ -38,10 +38,16 @@ def remap_command(previous_string, dictated_string):
         "kropka" : ".",
         "przecinek" : ",",
         "średnik" : ";",
+        "kreska" : "-",
         "szukaj" : "{VK_LCONTROL down}F{VK_LCONTROL up}",
         "find" : "{VK_LCONTROL down}F{VK_LCONTROL up}",
         "po angielsku": command_switch_to_english,
         "to polish": command_switch_to_polish,
+        
+        "period" : ".",
+        "comma" : ",",
+        "semicolon" : ";",
+        "desh" : "-"
     }
     if dictated_string in commands_remap.keys():
         return commands_remap[dictated_string]
@@ -49,7 +55,7 @@ def remap_command(previous_string, dictated_string):
     if dictated_string.endswith("kropka") or dictated_string.endswith("period"):
         return rreplace(dictated_string, " kropka", ".", 1)
 
-    if dictated_string == "cofnij" or dictated_string == "co w niej": # Tak właśnie.... hmmm 
+    if dictated_string == "cofnij" or dictated_string == "co w niej" or dictated_string == "back": # Tak właśnie.... hmmm 
         return "{BACKSPACE}" * len(previous_string)
     
   
@@ -357,7 +363,8 @@ class App:
                                 processed_text = processed_text.capitalize()
                         if processed_text.strip():
                             if keyboard.is_pressed("ctrl"):
-                                self.text_to_send += processed_text 
+                                self.text_to_send += " " + processed_text 
+                                self.text_to_send = self.text_to_send.strip()
                                 
                             previous_text = processed_text
                             
