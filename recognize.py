@@ -62,6 +62,8 @@ class App:
     def __init__(self) -> None:
         timings.Timings.after_sendkeys_key_wait = 0
         
+        self.text_to_send = "" # Text to be send after the ctrl key is released
+        
         self.main_thread_queue = queue.Queue()
         
         try:
@@ -201,6 +203,11 @@ class App:
             except queue.Empty:
                 pass
             self.root_window.after(100, read_and_evaluate_queue)
+
+            if not keyboard.is_pressed("ctrl") and self.text_to_send:
+                send_keys(self.text_to_send, with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
+                print("Text send: " + self.text_to_send)
+                self.text_to_send = ""
             
         self.root_window.after(100, read_and_evaluate_queue)
 
@@ -298,7 +305,7 @@ class App:
 
             model = Model(lang=self.lang_var.get())
 
-
+            
             with sd.RawInputStream(samplerate=samplerate, blocksize = 600, device=0,
                     dtype="int16", channels=1, callback=callback, latency="high"):
 
@@ -350,9 +357,12 @@ class App:
                                 processed_text = processed_text.capitalize()
                         if processed_text.strip():
                             if keyboard.is_pressed("ctrl"):
-                                ctrls_up = "{VK_CONTROL up}{VK_LCONTROL up}" # kinda works, needs testing (the ctrl to hold for the keys to be sent)
-                                send_keys(ctrls_up + processed_text + " ", with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
+                                self.text_to_send += processed_text 
+                                
                             previous_text = processed_text
+                            
+
+                            
                         self.latest_entries_box.insert(0, text)
                         
                         def print_to_log_conditionaly():
