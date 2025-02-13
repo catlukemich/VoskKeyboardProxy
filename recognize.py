@@ -15,7 +15,7 @@ import tkinter as tk
 import pyperclip
 import tkinter.messagebox
 from tkinter.ttk import * 
-# from ttkbootstrap import * 
+from ttkbootstrap import * 
 import sounddevice as sd
 import shelve
 from pywinauto.keyboard import send_keys
@@ -94,32 +94,24 @@ class App:
 
         self.root_window = tk.Tk() # Fcking root window!
         self.root_window.title("Polski - VOSK keyboard proxy")
-        self.root_window.geometry("240x400")
+        # self.root_window.geometry("240x400")
         self.taskbar_anim = None
 
-        ico = Image.open('vosk.png')
+        ico = Image.open('vosk.ico')
         photo = ImageTk.PhotoImage(ico)
         self.root_window.wm_iconphoto(False, photo)
 
 
+
+        langs_frame = LabelFrame(self.root_window, text="Choose language")
+        langs_frame.pack(ipadx = 10, ipady = 10, pady=10)
         self.lang_var = tk.StringVar(value=self.language)
+        
             
-        self.language_polish =  Radiobutton(self.root_window, text="Polish language", var=self.lang_var, value="pl", command=lambda: self.switch_language())
-        self.language_polish.pack()
-        self.language_english = Radiobutton(self.root_window, text="English language", var=self.lang_var, value="en-us", command=lambda: self.switch_language())
-        self.language_english.pack()
-        
-        self.update_title()
-        
-        self.do_logging_var = tk.IntVar(value=self.do_logging)
-        def on_logging_toggle(): # Just update the shelve with the logging new state.
-            self.shelve["do_logging"] = self.do_logging_var.get()
-        self.logging_checkbox = Checkbutton(self.root_window, text="Do logging", variable=self.do_logging_var, command=on_logging_toggle)
-        self.logging_checkbox.pack(padx=5, pady=5)
-        
-        self.latest_entries_box = tk.Listbox(self.root_window, width=150)
-        self.latest_entries_box.pack(padx=5, pady=5)
-        self.latest_entries_box.bind("<Double-Button-1>", lambda e: pyperclip.copy(self.latest_entries_box.get(ANCHOR)))
+        self.language_polish =  Radiobutton(langs_frame, text="Polish language", var=self.lang_var, value="pl", command=lambda: self.switch_language())
+        self.language_polish.pack(padx=10, pady=10, fill="x")
+        self.language_english = Radiobutton(langs_frame, text="English language", var=self.lang_var, value="en-us", command=lambda: self.switch_language())
+        self.language_english.pack(padx=10, fill="x")
         
         self.recognizer_running = False
         def toggle_recognizer():
@@ -142,18 +134,32 @@ class App:
         self.start_button["text"] = "START"
         self.start_button["fg"] = "white"
         self.start_button["bg"] = "green"
-        self.start_button.pack()
+        self.start_button.pack(ipadx = 20, ipady = 5, pady=10, fill=X)
+        
+        self.update_title()
+        
+    
+        self.latest_entries_box = tk.Listbox(self.root_window, width=50)
+        self.latest_entries_box.pack(padx=5, pady=5)
+        self.latest_entries_box.bind("<Double-Button-1>", lambda e: pyperclip.copy(self.latest_entries_box.get(ANCHOR)))
+        
+     
 
-        self.current_input = Label(self.root_window, text="<< Current input >>")
-        self.current_input.pack()
+        input_frame = LabelFrame(self.root_window, text="Current input:")
+        input_frame.pack(padx = 5, pady=5, fill=X)
+        self.current_input = Label(input_frame, text="...")
+        self.current_input.pack(ipadx = 10, ipady = 10)
 
+
+        settings_frame = LabelFrame(self.root_window, text= "Settings")
+        settings_frame.pack(padx=5, pady=5, ipadx = 10, ipady = 10)
         
         autostart_var = tk.BooleanVar(value=False)
         def toggle_autostart():
             autostart = autostart_var.get()
             self.shelve["autostart"] = autostart
-        self.autostart_checkbox = Checkbutton(self.root_window, text="Autostart", variable=autostart_var, command=toggle_autostart)
-        self.autostart_checkbox.pack(padx=5, pady=5)
+        self.autostart_checkbox = Checkbutton(settings_frame, text="Autostart", variable=autostart_var, command=toggle_autostart)
+        self.autostart_checkbox.pack(padx=5, pady=5, fill="x")
         
         self.autostart = False
         if "autostart" in self.shelve:
@@ -161,6 +167,13 @@ class App:
             autostart_var.set(self.autostart)
         else:
             self.shelve["autostart"] = self.autostart
+            
+        self.do_logging_var = tk.IntVar(value=self.do_logging)
+        def on_logging_toggle(): # Just update the shelve with the logging new state.
+            self.shelve["do_logging"] = self.do_logging_var.get()
+        self.logging_checkbox = Checkbutton(settings_frame, text="Do logging", variable=self.do_logging_var, command=on_logging_toggle)
+        self.logging_checkbox.pack(padx=5, fill="x")
+        
             
         exit_button = None
         last_click_time = time.time() * 1000

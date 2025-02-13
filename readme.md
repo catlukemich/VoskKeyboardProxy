@@ -27,10 +27,11 @@ The dependencies (modules) are:
 - pywinauto
 - sounddevice
 - pyperclip
+- ttkbootstrap
 
 In order to install them all in one go, issue the following command to the command line (provided that you have python on the PATH - most probably you do):
 
-`python -m pip install vosk PIL keyboard pywinauto sounddevice pyperclip`
+`python -m pip install vosk PIL keyboard pywinauto sounddevice pyperclip ttkbootstrap`
 
 
 This application also depends on the recognition models: polish and english, 
