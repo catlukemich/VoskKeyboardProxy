@@ -13,25 +13,33 @@ Currently two languages are supported: polish (my native language) and english.
 
 # Description
 
-The application is written in Python's tkinter and uses simple user interface solutions
-The application allows to log get text dictated.
+The application is written in Python's 3.12.4, using tkinter for simple user interface as a solution to issue commands to the application.
+The backend used for voice to text conversion is VOSK library.
+Also the application allows to log the text dictated (by default when the logging is enabled - it logs what has been said to *text_log.txt* file in the installation directory).
 
 # Installation
+
+In order to install this application you need to clone it into your local file system,
+install the required dependencies and run using Python by issuing the following command:
+`python recognize.py`. 
 
 ## Dependencies
 
 The dependencies (modules) are:
-- vosk
-- PIL
-- keyboard
-- pywinauto
-- sounddevice
-- pyperclip
-- ttkbootstrap
+- vosk 0.3.45
+- pillow 10.4.0 
+- keyboard 0.13.5
+- pywinauto 0.6.8
+- sounddevice 0.4.7
+- pyperclip 1.9.0
+- ttkbootstrap 1.10.1
 
 In order to install them all in one go, issue the following command to the command line (provided that you have python on the PATH - most probably you do):
 
 `python -m pip install vosk PIL keyboard pywinauto sounddevice pyperclip ttkbootstrap`
+
+or use the provided *requirements.txt* to install files by pip
+
 
 
 This application also depends on the recognition models: polish and english, 
