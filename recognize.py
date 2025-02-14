@@ -61,6 +61,7 @@ def remap_command(previous_string, dictated_string):
   
     return dictated_string
     
+    
 
 
 class App:
@@ -349,6 +350,7 @@ class App:
                         # REMAP
                         input_text = text
                         processed_text = remap_command(previous_text + " ", input_text)
+                        
                         
                         def to_polish():
                             self.lang_var.set("pl")
