@@ -5,22 +5,23 @@
 # For more help run: `python test_microphone.py -h`
 
 import os
+from pickle import UnpicklingError
 import sys 
 import json 
 import threading
 import time
 import queue
+import shelve
 import json.decoder
 import tkinter as tk
-import pyperclip
-import tkinter.messagebox
 from tkinter.ttk import * 
 from ttkbootstrap import * 
+import pystray
 import sounddevice as sd
-import shelve
 from pywinauto.keyboard import send_keys
 import pywinauto.timings as timings
 import keyboard
+import pyperclip
 from PIL import Image, ImageTk
 
 from vosk import Model, KaldiRecognizer
@@ -28,6 +29,10 @@ from vosk import Model, KaldiRecognizer
 command_switch_to_english = "<<VOSK COMMAND: LANGUAGE - en-us>>"
 command_switch_to_polish = "<<VOSK COMMAND: LANGUAGE - pl>>"
 
+langs_map = {
+    "pl": "polski",
+    "en-us": "english"
+}
 
 def rreplace(s, old, new, occurrence):
     li = s.rsplit(old, occurrence)
@@ -74,17 +79,21 @@ class App:
         self.main_thread_queue = queue.Queue()
         
         try:
-            self.shelve = shelve.open("vosk-keyboard-proxy.dat")
+            self.shelve = shelve.open("vosk-keyboard-proxy")
         except Exception as e:
             # The shelve got screwed up, so recreate the file
             os.unlink("vosk-keyboard-proxy.dat")
             self.shelve = shelve.open("vosk-keyboard-proxy.dat") # Hahaha xD trololo
             
         
-                
+        # Settings variables:        
         self.language = "pl" if not "language" in self.shelve else self.shelve["language"]
         self.autostart = False if not "autostart" in self.shelve else self.shelve["autostart"]
         self.do_logging = True if not "do_logging" in self.shelve else self.shelve["do_logging"]
+        self.to_tray_on_exit = True if not "to_tray_on_exit" in self.shelve else self.shelve["to_tray_on_exit"]
+        self.run_in_tray = True if not "run_in_tray" in self.shelve else self.shelve["run_in_tray"]
+        
+        
         
         if "language" in self.shelve:
             self.language = self.shelve["language"]
@@ -103,6 +112,12 @@ class App:
         self.root_window.wm_iconphoto(False, photo)
 
 
+        # Menu bar:
+        menu = tk.Menu(self.root_window)
+        menu.add_separator(background="RED")
+        self.root_window.config(menu=menu)
+        menu.add_command(label="Exit", command=self.exit)
+
 
         langs_frame = LabelFrame(self.root_window, text="Choose language")
         langs_frame.pack(ipadx = 10, ipady = 10, pady=10)
@@ -115,23 +130,9 @@ class App:
         self.language_english.pack(padx=10, fill="x")
         
         self.recognizer_running = False
-        def toggle_recognizer():
-            if not self.recognizer_running:
-                self.running = False
-                self.interrupted = False
-                self.start_recognizer()
-                self.start_button["text"] = "STOP"
-                self.start_button["bg"] = "red"
-                self.start_taskbar_icon_anim()
-            else:
-                self.interrupted = True
-                self.start_button["text"] = "START"
-                self.start_button["bg"] = "green"
-                self.stop_taskbar_icon_anim()
-                self.running = False
-            self.recognizer_running = not self.recognizer_running
+       
             
-        self.start_button = tk.Button(self.root_window, text="START", command=toggle_recognizer)
+        self.start_button = tk.Button(self.root_window, text="START", command=self.toggle_recognizer)
         self.start_button["text"] = "START"
         self.start_button["fg"] = "white"
         self.start_button["bg"] = "green"
@@ -175,25 +176,35 @@ class App:
         self.logging_checkbox = Checkbutton(settings_frame, text="Do logging", variable=self.do_logging_var, command=on_logging_toggle)
         self.logging_checkbox.pack(padx=5, fill="x")
         
-            
+        # Hide to tray on exit toggle button.
+        self.to_tray_on_exit_var = tk.BooleanVar(value=self.to_tray_on_exit)
+        def on_to_tray_toggle():
+            self.shelve["to_tray_on_exit"] = self.to_tray_on_exit_var.get()
+            self.to_tray_on_exit = self.to_tray_on_exit_var.get()
+        self.to_tray_checkbox = Checkbutton(settings_frame, text="Hide to tray on exit", variable=self.to_tray_on_exit_var, command=on_to_tray_toggle)
+        self.to_tray_checkbox.pack(padx=5, fill=X)
+        
+        # Run the application in system tray when it is launched.
+        self.run_in_tray_var = tk.BooleanVar(value=self.run_in_tray)
+        def on_run_in_tray_toggle():
+            self.shelve["run_in_tray"] = self.run_in_tray_var.get()
+            self.run_in_tray = self.run_in_tray_var.get()
+        self.run_in_tray_checkbox = Checkbutton(settings_frame, text="Start the application in system tray", variable=self.run_in_tray_var, command=on_run_in_tray_toggle)
+        self.run_in_tray_checkbox.pack(padx=5, fill=X)
+    
+        
+        # Exiting logic:    
         exit_button = None
         last_click_time = time.time() * 1000
         def handle_window_close():
-            def exit_app():
-                self.shelve.sync()
-                self.shelve.close()
-                self.interrupted = True
-                if self.recognizer_thread:
-                    self.recognizer_thread.join()
-                self.root_window.destroy()
-                self.root_window.quit()
-                exit(1)
+            if self.to_tray_on_exit:
+                self.minimize_to_tray()
                 
             nonlocal last_click_time
             click_time = time.time() * 1000
             print(click_time - last_click_time)
             if click_time - last_click_time < 1600:
-                exit_app()
+                self.exit()
             last_click_time = click_time
             
             
@@ -207,13 +218,61 @@ class App:
         self.root_window.protocol("WM_DELETE_WINDOW", handle_window_close)
 
         if self.autostart:
-            toggle_recognizer()
+            self.toggle_recognizer()
 
         self.shelve.sync()
 
+    
+        if self.run_in_tray:
+            self.root_window.after(100, self.minimize_to_tray)
+                    
+
         self.run_main_thread_queue_handler()
         
+    
+    def exit(self):
+        self.shelve.sync()
+        self.shelve.close()
+        self.interrupted = True
+        if self.recognizer_thread:
+            self.recognizer_thread.join()
+        self.root_window.destroy()
+        self.root_window.quit()
+        exit(0)
+    
+    def minimize_to_tray(self):
+        self.root_window.withdraw()
+        image = Image.open("vosk.png")
         
+        self.icon = None # The icon create by pystray
+        
+        def to_polish():
+            self.lang_var.set("pl")
+            self.switch_language()
+            self.icon.title =  langs_map[self.language].capitalize() + " - VKP"
+            self.icon.update_menu()
+        def to_english():
+            self.lang_var.set("en-us")
+            self.switch_language()
+            self.icon.title =  langs_map[self.language].capitalize() + " - VKP"
+            self.icon.update_menu()
+            
+        
+        menu = (
+            pystray.MenuItem('English', to_english, checked = lambda item: self.language == "en-us"),
+            pystray.MenuItem('Polish', to_polish, checked = lambda item: self.language == "pl"),
+            pystray.MenuItem('Running', self.toggle_recognizer, checked = lambda item: self.running),
+            pystray.MenuItem('Show', self.restore_from_tray, default=True),
+            )
+        
+        self.icon = pystray.Icon("VOSK Keyboard Proxy", image, langs_map[self.language].capitalize() + " - VKP", menu)
+        self.icon.run_detached()
+        
+    def restore_from_tray(self):
+        self.icon.stop()
+        self.root_window.after(0, self.root_window.deiconify)
+        
+    
     def run_main_thread_queue_handler(self):
      
         def read_and_evaluate_queue():
@@ -232,7 +291,21 @@ class App:
         self.root_window.after(100, read_and_evaluate_queue)
 
 
-
+    def toggle_recognizer(self):
+            if not self.recognizer_running:
+                self.running = False
+                self.interrupted = False
+                self.start_recognizer()
+                self.start_button["text"] = "STOP"
+                self.start_button["bg"] = "red"
+                self.start_taskbar_icon_anim()
+            else:
+                self.interrupted = True
+                self.start_button["text"] = "START"
+                self.start_button["bg"] = "green"
+                self.stop_taskbar_icon_anim()
+                self.running = False
+            self.recognizer_running = not self.recognizer_running
 
     def start(self):
         self.root_window.mainloop()
@@ -242,17 +315,14 @@ class App:
         self.shelve["language"] = self.lang_var.get()
         self.language = self.lang_var.get()
         self.update_title()
+        message = langs_map[self.language].capitalize()
+        if self.icon:
+            self.icon.notify(title="VOSK Keyboard Proxy", message = message)
         if self.running:
             self.root_window.after(10, self.restart_recognizer)
             
     def update_title(self):
-        langs_map = {
-            "pl": "polski",
-            "en-us": "english"
-        }
-        
         language = langs_map[self.language]
-        
         self.root_window.title(f"{language.capitalize()} -  VOSK keyboard proxy")
  
     def restart_recognizer(self):
@@ -284,8 +354,14 @@ class App:
             self.record_icon_state = not self.record_icon_state
             if self.record_icon_state: 
                 self.root_window.wm_iconphoto(False, photo_recording)
+                if self.icon: 
+                    self.icon.icon = icon_recording
+                    self.icon.update_menu()
             else:
                 self.root_window.wm_iconphoto(False, photo_normal)
+                if self.icon: 
+                    self.icon.icon = icon_normal
+                    self.icon.update_menu()
             self.taskbar_anim = self.root_window.after(500, animate)
         if not self.taskbar_anim:
             self.record_icon_state = False
@@ -296,6 +372,9 @@ class App:
         icon_normal = Image.open('vosk.png')
         photo_normal = ImageTk.PhotoImage(icon_normal)
         self.root_window.wm_iconphoto(False, photo_normal)
+        if self.icon: 
+            self.icon.icon = icon_normal
+            self.icon.update_menu()
         self.record_icon_stat = False
         self.taskbar_anim = None
     
@@ -451,5 +530,24 @@ class App:
 
 
 if __name__ == "__main__":
-    app = App()
-    app.start()
+    try:
+        app = App()
+        app.start()
+
+    except UnpicklingError as e:
+        window = tk.Tk()
+        ico = Image.open('vosk.ico')
+        photo = ImageTk.PhotoImage(ico)
+        window.wm_iconphoto(False, photo)
+
+        window.wm_withdraw()
+        import tkinter.messagebox
+        tkinter.messagebox.showerror("Unable to read stored settings, falling back to defaults!")
+        
+        os.unlink("vosk-keyboard-proxy.dat.bak")
+        os.unlink("vosk-keyboard-proxy.dat.dat")
+        os.unlink("vosk-keyboard-proxy.dat.dir")
+        
+        app = App()
+        app.start()
+        
