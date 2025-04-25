@@ -26,6 +26,19 @@ from PIL import Image, ImageTk
 
 from vosk import Model, KaldiRecognizer
 
+
+def check_user_input_state():
+    ''' 
+    Check if the system should record and input the converted data into text fields.
+    This is a convenience function to reassign shortcuts or handle anything that is 
+    required for the VOSK to do it's actual work - input voice converted into text to the system.
+    '''
+    return keyboard.is_pressed("ctrl") and keyboard.is_pressed("alt")
+  
+  
+
+
+
 command_switch_to_english = "<<VOSK COMMAND: LANGUAGE - en-us>>"
 command_switch_to_polish = "<<VOSK COMMAND: LANGUAGE - pl>>"
 
@@ -91,7 +104,7 @@ class App:
         self.autostart = False if not "autostart" in self.shelve else self.shelve["autostart"]
         self.do_logging = True if not "do_logging" in self.shelve else self.shelve["do_logging"]
         self.to_tray_on_exit = True if not "to_tray_on_exit" in self.shelve else self.shelve["to_tray_on_exit"]
-        self.run_in_tray = True if not "run_in_tray" in self.shelve else self.shelve["run_in_tray"]
+        self.run_in_tray = False if not "run_in_tray" in self.shelve else self.shelve["run_in_tray"]
         
         
         
@@ -105,6 +118,7 @@ class App:
         self.root_window = tk.Tk() # Fcking root window!
         self.root_window.title("Polski - VOSK keyboard proxy")
         # self.root_window.geometry("240x400")
+        self.icon = None # The icon for used by the pytray
         self.taskbar_anim = None
 
         ico = Image.open('vosk.ico')
@@ -283,9 +297,11 @@ class App:
                 pass
             self.root_window.after(100, read_and_evaluate_queue)
 
-            if not keyboard.is_pressed("ctrl") and self.text_to_send:
-                send_keys(self.text_to_send, with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
-                print("Text send: " + self.text_to_send)
+            if not check_user_input_state():
+                text = self.text_to_send
+                def send_the_text_delayed():
+                    send_keys(text, with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
+                self.root_window.after(200, send_the_text_delayed)
                 self.text_to_send = ""
             
         self.root_window.after(100, read_and_evaluate_queue)
@@ -456,10 +472,9 @@ class App:
                             if len(stripped) > 0 and stripped[-1] == ".":
                                 processed_text = processed_text.capitalize()
                         if processed_text.strip():
-                            if keyboard.is_pressed("ctrl"):
+                            if  check_user_input_state():
                                 self.text_to_send += " " + processed_text 
                                 self.text_to_send = self.text_to_send.strip()
-                                
                             previous_text = processed_text
                             
 
