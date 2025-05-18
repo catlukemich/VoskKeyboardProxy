@@ -310,6 +310,7 @@ class App:
             self.root_window.after(100, read_and_evaluate_queue)
 
             if not check_user_input_state():
+                print("Somehtigkdlfjdl;akj")
                 text = self.text_to_send
                 def send_the_text_delayed():
                     send_keys(text, with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
@@ -532,7 +533,12 @@ class App:
         # Search for a "Date of recordings: "
         prepend_date = True # Whether to prepend date before the next log line:
         prepend_newline = False # Dont place newline character when there was no entry or date - the file is empty
-        with open("./text_log.txt", "r", encoding="utf-8") as logfile:
+        
+        logfile_name = "./text_log.txt"
+        if not os.path.exists(logfile_name):
+            open(logfile_name, "w")
+
+        with open(logfile_name, "r", encoding="utf-8") as logfile:
             lines = logfile.readlines()
             for line_idx in range(len(lines) - 1, -1, -1):
                 line = lines[line_idx]
