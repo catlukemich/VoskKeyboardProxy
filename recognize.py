@@ -24,6 +24,10 @@ import keyboard
 import pyperclip
 from PIL import Image, ImageTk
 
+from plugins.track_switcher import SoundController
+from plugins.calculator import CalculatorLauncher
+from plugins.app_launcher import AppLauncher
+
 from vosk import Model, KaldiRecognizer
 
 
@@ -85,6 +89,14 @@ def remap_command(previous_string, dictated_string):
 class App:
 
     def __init__(self) -> None:
+        self.active_plugins = [
+            SoundController(),
+            CalculatorLauncher(),
+            AppLauncher()
+        ]
+        
+        
+        
         timings.Timings.after_sendkeys_key_wait = 0
         
         self.text_to_send = "" # Text to be send after the ctrl key is released
@@ -101,7 +113,7 @@ class App:
         
         # Settings variables:        
         self.language = "pl" if not "language" in self.shelve else self.shelve["language"]
-        self.autostart = False if not "autostart" in self.shelve else self.shelve["autostart"]
+        self.autostart = True if not "autostart" in self.shelve else self.shelve["autostart"]
         self.do_logging = True if not "do_logging" in self.shelve else self.shelve["do_logging"]
         self.to_tray_on_exit = True if not "to_tray_on_exit" in self.shelve else self.shelve["to_tray_on_exit"]
         self.run_in_tray = False if not "run_in_tray" in self.shelve else self.shelve["run_in_tray"]
@@ -302,6 +314,7 @@ class App:
                 def send_the_text_delayed():
                     send_keys(text, with_spaces = True, pause = 0, vk_packet=False) # vk_packet set to False solves the issue where some windows don't accept the keys (like Blender)
                 self.root_window.after(200, send_the_text_delayed)
+                if text: print(text)
                 self.text_to_send = ""
             
         self.root_window.after(100, read_and_evaluate_queue)
@@ -463,6 +476,11 @@ class App:
                             self.main_thread_queue.put(to_english)
                             return
                         
+                        # Run plugins that are active
+                        for plugin in self.active_plugins:
+                            if processed_text in plugin.trigger_text():
+                                self.main_thread_queue.put(lambda: plugin.execute_command(processed_text))
+                        
                         def set_last_text():
                             self.current_input["text"] = processed_text
                         self.main_thread_queue.put(set_last_text)
@@ -475,6 +493,7 @@ class App:
                             if  check_user_input_state():
                                 self.text_to_send += " " + processed_text 
                                 self.text_to_send = self.text_to_send.strip()
+                            pyperclip.copy(processed_text.strip())
                             previous_text = processed_text
                             
 
